@@ -17,6 +17,7 @@
 
     return (
         <View style={styles.container}>
+            <Image style={styles.bgimage} source={require('https://coopdgii.com/wp-content/uploads/2019/10/Logo-Coop2-01.png')}/>
             <Spinner visible={isLoading} />
                 <View style={styles.wrapper}>
                     <TextInput
@@ -70,6 +71,15 @@
     },
     link: {
         color: 'blue',
+    },
+    bgimage:{
+        flex: 1,
+        resizeMode: 'cover',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'absolute',
+        width: '100%',
+        height: '100%',
     },
     });
 
